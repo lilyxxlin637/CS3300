@@ -1,0 +1,55 @@
+<p id = "p1">
+Problem 1: Identity the valid javascript types and prove an example.
+For each example use console.log(typeof()) to demonstrate it validity.
+<script>
+//boolean
+console.log(typeof(true));
+//function
+function id(x) {return x};
+console.log(typeof(id));
+//number
+console.log(typeof(1.0));
+//object
+var car = {color:"yellow"};
+console.log(typeof(care));
+//string
+console.log(typeof("string"));
+//undefined
+console.log(typeof (asdf));
+</script>
+</p>
+
+
+<p id = "p2">
+Problem 2: describe the error in each example and provide a fixed version.
+Use JSON.parse() to demonstrate that it works
+<script>
+//a) keys must be strings and JSON.parse() requires strings as inputs.
+JSON.parse('{"name":"Data-driven web applications"}');
+
+//b) JSON.parse() requires strings as inputs.
+//No comments are allowed in JSON files,
+//but a new key,value pair could be constructed to store necessary information
+JSON.parse('{ "comments":"/* the next variable is a course number */","number": 3300 }');
+
+//c) The example did not use commas to seperate the list of objects.
+//It also used ; instead of : between the key "number" and value 1110.
+JSON.parse('[ { "name": "DDWA", "number": 3300 },{ "name": "Java", "number": 2110 },{ "name": "Python", "number": 1110 }]')
+</script>
+</p>
+
+<p id = "p3">
+Problem 3: write a JSON file that represents a list as required.
+<script>
+[{ "name": "Lily", "age": 20,"isCSMajor":true },
+{ "name": "Jessica", "age": 19,"isCSMajor":false },
+{ "name": "Krystal", "age": 19,"isCSMajor":false}]
+</script>
+</p>
+
+<p id = "p4">
+Problem 4: describe the course policy on late and unreadable homework.
+Late work and unreadable assignments will al receive zeros with no exceptions.
+Although the 2 lowest homework grade will be discarded.
+
+</p>
